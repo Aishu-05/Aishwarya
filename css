@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #333;
+}
+
+header {
+    background:purple;
+    color: rgb(248, 244, 244);
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #070707;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+.hover-effect {
+    transition: color 0.5s, transform 0.5s;
+    display: inline-block;
+}
+
+.hover-effect:hover {
+    color: #ff5733;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 87, 51, 0.8), 0 0 20px rgba(255, 87, 51, 0.6);
+}
+nav ul {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.side-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 8px 15px;
+    background: #0a0a0a;
+    color: rgb(135, 47, 146);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.side-title:hover {
+    background: #020000;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(12, 12, 12, 0.8);
+}
+.top-right-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.top-right-menu li {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    background: #cab4b4;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.top-right-menu li:hover {
+    background: #250a50;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(63, 24, 134, 0.8);
+}
+body {
+    background-color: black;
+    color: rgb(10, 10, 10);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.animated-home {
+    padding: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.highlight {
+    font-weight: bold;
+    color: white;
+}
+
+.top-right-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.top-right-menu li {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.top-right-menu li:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
